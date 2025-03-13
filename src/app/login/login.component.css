@@ -1,0 +1,155 @@
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e9ecef; /* Color de fondo restaurado */
+  padding: 20px;
+}
+
+/* Tarjeta de inicio de sesión */
+.login-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Título de la tarjeta */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grupo de campos */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilos para los campos de texto */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón de envío */
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Enlaces */
+a {
+  color: #007bff;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mensajes de error y éxito */
+.error-message,
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Ajustes cuando se muestra el formulario de registro */
+.recuperar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Establecer oculto inicialmente */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recuperar-container.mostrar {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Formulario de recuperación */
+.recuperar-contrasena {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recuperar-contrasena h3 {
+  text-align: center;
+}
+
+.recuperar-contrasena input {
+  margin-top: 15px;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
